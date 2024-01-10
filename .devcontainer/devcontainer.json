@@ -1,0 +1,27 @@
+{
+	"name": "Ansible+Terraform",
+    "build": {
+        // Path is relative to the devcontainer.json file.
+        "dockerfile": "Containerfile"
+    },
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"HashiCorp.terraform"
+			],
+			"settings": {
+			}
+		}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+		"ghcr.io/devcontainers/features/terraform:1": {},
+		"ghcr.io/devcontainers-contrib/features/ansible:2": {}
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	"containerUser": "vscode"
+}
